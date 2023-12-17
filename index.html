@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hangman Game </title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Unicons -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <nav class="nav">
+        <a style="margin-left: 50px;" href="#" class="nav_logo"><b>Hangman Game</b> </a>
+
+        <ul class="nav_items">
+          <li class="nav_item">
+            <a  href="about.html" class="nav_link"> <h1>HAKKIMIZDA</h1> </a>           
+          </li>
+        </ul>
+
+        <button style="margin-right: 30px;" class="button" id="form-open">Giriş Yap</button>
+      </nav>
+    </header>
+
+    <!-- Home -->
+    <section class="home">
+      <div class="form_container">
+        <i class="uil uil-times form_close"></i>
+        <!-- Login From -->
+        <div class="form login_form">
+          <form action="signin.php" method="post" id="signinForm" novalidate>
+            <h2>Giriş Yap</h2>
+
+            <div class="input_box">
+              <input type="email" id="email" name="email" placeholder="Email adresinizi giriniz" required />
+              <i class="uil uil-envelope-alt email"></i>
+            </div>
+            <div class="input_box">
+              <input type="password" id="password" name="password" placeholder="Şifrenizi giriniz" required />
+              <i class="uil uil-lock password"></i>
+              <i class="uil uil-eye-slash pw_hide"></i>
+            </div>
+
+            <div class="option_field">
+              <span class="checkbox">
+                <input type="checkbox" id="check" />
+                <label for="check">Beni Hatırla</label>
+              </span>
+              <a href="#" class="forgot_pw">Şifremi Hatırla?</a>
+            </div>
+
+            <button class="button">Giriş Yap</button>
+
+            <div class="login_signup">Hesabınız Yok mu? <a href="#" id="signup">Kayıt Ol</a></div>
+          </form>
+        </div>
+
+        <!-- Signup From -->
+        <div class="form signup_form">
+          <form action="connect.php" method="post" id="signup" novalidate>
+            <h2>Kayıt Ol</h2>
+            <div class="input_box">
+              <input type="text" id="name" name="name" placeholder="Adınızı giriniz" required />
+              <i class="uil uil-envelope-alt email"></i>
+            </div>
+
+            <div class="input_box">
+              <input type="email" id="email" name="email" placeholder="Email adresinizi giriniz" required />
+              <i class="uil uil-envelope-alt email"></i>
+            </div>
+            <div class="input_box">
+              <input type="password" id="password" name="password" placeholder="Şifre oluştur" required />
+              <i class="uil uil-lock password"></i>
+              <i class="uil uil-eye-slash pw_hide"></i>
+            </div>
+            <div class="input_box">
+              <input type="password" id="password_confirmation" name="password_confirmation" placeholder="Şifrenizi tekrar giriniz" required />
+              <i class="uil uil-lock password"></i>
+              <i class="uil uil-eye-slash pw_hide"></i>
+            </div>
+
+            <button class="button">Kayıt Ol</button>
+
+            <div class="login_signup">Zaten hesabınız var mı? <a href="#" id="login">Giriş Yap</a></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/script_login.js"></script>
+    <script src="js/script.js"></script>
+    
+
+  </body>
+</html>

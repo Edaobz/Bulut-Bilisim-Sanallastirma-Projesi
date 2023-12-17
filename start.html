@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hangman Game </title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Unicons -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+    <style>
+      /* Center the button */
+      .center-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; /* 100% of the viewport height */
+      }
+
+      /* Style for the button */
+      .custom-button {
+        padding: 20px 40px; /* Adjust padding to change button size */
+        font-size: 16px; /* Adjust font size */
+        border-radius: 20%; /* Make the button oval-shaped */
+        margin: 0 10px 20px; /* Add margin between buttons */
+        background-color: rgb(204, 125, 183); /* Change background color */
+        border: none; /* Remove border */
+        cursor: pointer; /* Add cursor pointer on hover */
+      }
+
+      .custom-button:hover {
+        background-color: rgb(212, 105, 184); /* Change background color on hover */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <nav class="nav">
+        <a style="margin-left: 50px;" href="#" class="nav_logo"><b>Hangman Game</b> </a>
+
+       
+      </nav>
+    </header>
+
+    <!-- Home -->
+    <section class="home1">
+      <div class="center-container">
+        <button class="custom-button" onclick="redirectToGamePage()">OYNA</button>
+        <button class="custom-button" onclick="logoutPage()">ÇIKIŞ YAP</button>
+      </div>
+      </div>
+    </section>
+    <script>
+    function redirectToGamePage() {
+      window.location.href = 'game.html'; // Change 'game.html' to your actual game page
+    }
+
+    function logoutPage() {
+      window.location.href = 'index.html'; // Change 'game.html' to your actual game page
+    }
+    
+    
+    
+    </script>
+
+
+    <script src="js/script_login.js"></script>
+    <script src="js/script.js"></script>
+    
+
+  </body>
+</html>
